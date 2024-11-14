@@ -9,7 +9,7 @@
 
         <Label 
             Text="Cadastrar Evento" 
-            FontFamily="AllanRegular"
+            FontFamily="Kallan"
             FontSize="40"
             HorizontalOptions="Center"
             TextColor="#170491"/>
@@ -27,15 +27,19 @@
         <Frame Margin="10">
             <VerticalStackLayout Spacing="10">
                 <Label Text="Período do Evento"
-                       FontSize="Subtitle"/>
+                FontSize="Subtitle"/>
+                
+                
                 <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
-                    <Label Text="Data de Início: "/>
-                    <DatePicker x:Name="dtpck_datainicio" Format="dd/MM/yyyy"/>
+                    
+                        <Label Text="Data de Início:" />
+
+                    <DatePicker x:Name="dtpck_datainicio" Format="dd/MM/yyyy" />
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                     <Label Text="Data de  Término: "/>
-                    <DatePicker x:Name="dtpck_datatermino" Format="dd/MM/yyyy"/>
+                    <DatePicker x:Name="dtpck_datatermino" Format="dd/MM/yyyy" />
                 </HorizontalStackLayout>
 
             </VerticalStackLayout>

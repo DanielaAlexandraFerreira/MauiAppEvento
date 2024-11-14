@@ -8,7 +8,7 @@
     <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10" Margin="10" BackgroundColor="#E4E4E4">
         <Label 
             Text="Resumo do Evento:"
-            FontFamily="AllanRegular"
+            FontFamily="Kalam"
             FontSize="40"
             HorizontalOptions="Center"
             TextColor="#170491"/>
