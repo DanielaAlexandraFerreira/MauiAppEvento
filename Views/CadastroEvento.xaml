@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppEvento.Views.CadastroEvento"
+             Title="CadastroEvento"
+             NavigationPage.HasNavigationBar="False">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10" Margin="10" BackgroundColor="#E4E4E4">
+
+        <Label 
+            Text="Cadastrar Evento" 
+            FontFamily="AllanRegular"
+            FontSize="40"
+            HorizontalOptions="Center"
+            TextColor="#170491"/>
+
+        <Frame Padding="10" Margin="10">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Nome do Evento:" />
+                <Entry x:Name="txt_nome"></Entry>
+                <Label Text="Local do evento:"/>
+                <Entry x:Name="txt_local"></Entry>
+            </VerticalStackLayout>
+
+        </Frame>
+
+        <Frame Margin="10">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Período do Evento"
+                       FontSize="Subtitle"/>
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Data de Início: "/>
+                    <DatePicker x:Name="dtpck_datainicio" Format="dd/MM/yyyy"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Data de  Término: "/>
+                    <DatePicker x:Name="dtpck_datatermino" Format="dd/MM/yyyy"/>
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+        </Frame>
+
+        <Frame Margin="10">
+            <VerticalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand" >
+                    <Label Text="Número de participantes:"/>
+                    <Entry x:Name="qtd_participantes" Keyboard="Numeric"></Entry>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Custo por participante:"/>
+                    <Entry x:Name="txt_custo" Keyboard="Numeric" Placeholder="R$"></Entry>
+
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Frame>
+        <Button Text="Avançar" Clicked="Button_Clicked" Padding="10" Margin="10" BackgroundColor="#5A9367"/>
+
+    </VerticalStackLayout>
+</ContentPage>
